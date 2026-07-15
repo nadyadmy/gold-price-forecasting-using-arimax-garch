@@ -1,6 +1,22 @@
-# Project Overview
-This project develops a hybrid **ARIMAX-GARCH** model to forecast monthly gold prices using historical data from 2014 to 2025.
-The forecasting process combines the strengths of **ARIMAX** and **eGARCH** models. ARIMAX is employed to capture the relationship between gold prices and external economic variables, including the USD/IDR exchange rate and inflation. Meanwhile, the eGARCH model is applied to model volatility clustering, a common characteristic of financial time series data.
-The project follows a complete time series forecasting workflow, including data preprocessing, exploratory analysis, stationarity testing, model development, diagnostic checking, volatility modeling, forecasting, and model evaluation. The final model is assessed using RMSE, MAD, and MAPE to measure forecasting performance.
+# Project Highlight
+- Developed a hybrid ARIMAX-eGARCH model for monthly gold price forecasting.
+- Incorporated inflation and USD/IDR exchange rate as exogenous variables.
+- Compared multiple ARIMAX and GARCH candidate models.
+- Evaluated forecasting performance using RMSE, MAD, and MAPE.
+- Built a reproducible forecasting workflow in R.
 
-# Project Workflow
+## 🔄 Project Workflow
+The following workflow illustrates the complete process of developing the ARIMAX-GARCH forecasting model.
+
+<p align="center">
+  <img src="flowchart.jpg" alt="Project Workflow" width="500">
+</p>
+
+## 📈 Forecast Result
+
+The hybrid ARIMAX(0,2,1)-eGARCH(1,1) model was used to forecast monthly gold prices with a 95% confidence interval.
+
+<p align="center">
+  <img src="Forecast.jpg" alt="Forecast Result" width="500">
+</p>
+
